@@ -4,10 +4,12 @@
 #include <cstdio>
 #include <iostream>
 
-#ifdef _WIN32
+#include "../../common.hpp"
+
+#if defined(WINDOWS)
     #include <winsock2.h>
     #include <ws2def.h>
-#elif __linux__
+#elif defined(LINUX) || defined(MACOS)
     #include <sys/socket.h>
     #include <netinet/in.h>
 #endif
