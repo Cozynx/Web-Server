@@ -1,5 +1,0 @@
-make --dry-run --keep-going --print-directory
-make: Entering directory `/Users/Frityet/Documents/Web-Server'
-rm -rf build
-make: Leaving directory `/Users/Frityet/Documents/Web-Server'
- 

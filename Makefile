@@ -6,7 +6,7 @@ BUILD_DIR = build
 BIN_DIR = $(BUILD_DIR)/bin
 OBJ_DIR = $(BUILD_DIR)/obj
 
-EXEC = web_server.exe
+EXEC = $(BIN_DIR)/web_server.exe
 
 # Make does not offer a recursive wildcard function, so here's one:
 rwildcard=$(wildcard $1$2) $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2))
@@ -29,4 +29,4 @@ $(OBJ_DIR): $(BUILD_DIR)
 	mkdir $@
 
 all: all_dirs
-	$(CXX) $(SOURCES) $(HEADERS) $(CXX_FLAGS) $(LIBRARIES)
+	$(CXX) $(SOURCES) $(CXX_FLAGS) $(LIBRARIES) -o $(EXEC)
