@@ -2,7 +2,9 @@
 #define TESTSERVER_HPP
 
 #include "SimpleServer.hpp"
-#include <ws2tcpip.h>
+#ifdef _WIN32
+    #include <ws2tcpip.h>
+#endif
 #include <unistd.h>
 
 namespace HDE
