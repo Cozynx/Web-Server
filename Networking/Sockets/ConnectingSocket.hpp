@@ -1,8 +1,6 @@
 #ifndef CONNECTINGSOCKET_HPP
 #define CONNECTINGSOCKET_HPP
 
-#include <cstdio>
-
 #include "SimpleSocket.hpp"
 
 namespace HDE

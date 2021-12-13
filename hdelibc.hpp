@@ -1,6 +1,6 @@
-#ifndef hdelibc_hpp
-#define hdelibc_hpp
+#ifndef HDELIBC_HPP
+#define HDELIBC_HPP
 
-#include <cstdio>
+#include "Networking/hdelibc-networking.hpp"
 
-#endif // !hdelibc_hpp
+#endif // !HDELIBC_HPP

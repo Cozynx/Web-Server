@@ -1,13 +1,11 @@
 #ifndef LISTENINGSOCKET_HPP
 #define LISTENINGSOCKET_HPP
 
-#include <cstdio>
-
 #include "BindingSocket.hpp"
 
 namespace HDE
 {
-    class ListeningSocket : BindingSocket
+    class ListeningSocket : public BindingSocket
     {
         private:
             int backlog;

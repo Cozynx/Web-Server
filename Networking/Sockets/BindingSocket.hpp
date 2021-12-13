@@ -1,8 +1,6 @@
 #ifndef BINDINGSOCKET_HPP
 #define BINDINGSOCKET_HPP
 
-#include <cstdio>
-
 #include "SimpleSocket.hpp"
 
 namespace HDE
