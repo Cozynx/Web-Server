@@ -1,6 +1,6 @@
 CXX 		= g++
 CXX_FLAGS 	= 
-LIBRARIES 	= 
+LIBRARIES 	= -lwsock32
 
 BUILD_DIR = build
 BIN_DIR = $(BUILD_DIR)/bin
