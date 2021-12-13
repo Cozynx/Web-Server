@@ -18,7 +18,7 @@ HDE::SimpleSocket::SimpleSocket(int domain, int service, int protocol, int port,
 void HDE::SimpleSocket::test_connection(int item_to_test)
 {
     // Confirms that the socket or connection has been properly established
-    if(item_to_test > 0)
+    if(item_to_test < 0)
     {
         perror("Failed to connect...");
         exit(EXIT_FAILURE);
